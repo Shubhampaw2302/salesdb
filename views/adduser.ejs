@@ -1,0 +1,28 @@
+<%- include("header"); -%>
+
+<style>
+
+input {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+</style>
+
+<form method="POST" action="/adduser" autocomplete="off">
+    <label for="id">ID</label>
+    <input type="text" placeholder="ID number" name="id">
+
+    <label for="name">User Name</label>
+    <input type="text" placeholder="User Name" name="name">
+
+    <label for="amount">Amount</label>
+    <input type="text" placeholder="Amount" name="amount">
+
+    <label for="date">Date in dd-mm-yyyy</label>
+    <input type="text" placeholder="dd-mm-yyyy" name="date">
+
+    <button type="submit">Add</button>
+ </form>
+
+<%- include("footer"); -%>

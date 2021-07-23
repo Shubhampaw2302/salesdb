@@ -1,0 +1,24 @@
+<%- include("header"); -%>
+
+<table style="width: 100%;">
+    <tr style="text-align: left;">
+        <th>ID</th>
+        <th>User</th>
+        <th>Amount</th>
+        <th>date</th>
+    </tr>
+
+    <%  sales.forEach(function(sale){ %>
+        <tr>
+            <td><%=sale.id%></td>
+            <td><%=sale.userName%></td>
+            <td><%=sale.amount%></td>
+            <td><%=sale.date%></td>
+        </tr>
+    
+    <% }) %>
+</table>
+
+<button style="margin-top: 20px"><a style="color: black; text-decoration: none;" href="/adduser">Add User</a></button>
+
+<%- include("footer"); -%>
